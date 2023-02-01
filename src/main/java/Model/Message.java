@@ -139,4 +139,7 @@ public class Message {
                 ", time_posted_epoch=" + time_posted_epoch +
                 '}';
     }
+    public static String getAllMessages() {
+        return null;
+    }
 }

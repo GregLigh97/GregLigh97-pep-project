@@ -1,5 +1,8 @@
 package Controller;
 
+import java.nio.file.Path;
+
+import Model.Account;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 
@@ -16,8 +19,8 @@ public class SocialMediaController {
      */
     public Javalin startAPI() {
         Javalin app = Javalin.create();
-        app.get("example-endpoint", this::exampleHandler);
-
+        app.post();
+     
         return app;
     }
 

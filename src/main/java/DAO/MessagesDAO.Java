@@ -32,7 +32,7 @@ public Messages insertMessages(Messages message){
         return new Messages (generated_message_id, message.getName());
     }
 }catch(SQLException e){
-    System.out.println(e.getMessage());
+    System.out.println(e.getAllMessages());
 }
 return null;
 }
