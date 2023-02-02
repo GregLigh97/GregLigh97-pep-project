@@ -14,9 +14,15 @@ public AccountService(AccountDAO accountDAO){
 this.Account = accountDAO;
 }
 public List<Account>getAllaccounts() {
-    return null;
+    return AccountDAO.getAllAccounts();
 }
 
 public Account addAccount(Account accounts) {
-return AccountDAO.getAllAccounts();
-}
+    int account_id = message.getAccountByaccount_id
+    if(username = !null && password == 4 && Account == null){
+    String jsonStringToBeReturned = om.writeValueAsString;
+    ctx.result(jsonStringToBeReturned);
+    ctx.status(200);
+   }else{
+    return ctx.status(400);
+   }

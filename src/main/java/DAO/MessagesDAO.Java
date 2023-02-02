@@ -5,22 +5,22 @@ public class Messages{
 
 public List<Messages>getAllMessages(){
     Connection connection = ConnectionUtil.getConnection();
-    List<Messages> message = new ArrayList<>();
+    List<Messages> messages = new ArrayList<>();
     try {
-        //Write SQL logic here
+       
         String sql =;
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         ResultSet rs = preparedStatement.executeQuery();
         while(rs.next()){
-        Messages message = new Messagesrs(rs.getInt("Message_id")),  rs.getString("Message_text"));
-        Messages.add(message);
+        Messages messages = new Messagesrs(rs.getInt("Account_id")), (rs.getInt("Message_id"))  rs.getString("Message_text"));
+        Messages.add(messages);
 }
 }catch(SQLException e){
     System.out.println(e.getMessage());
 }
 
 
-public Messages insertMessages(Messages message){
+public Messages getAccountByaccount_id(int account_id){
     Connection connection = ConnectionUtil.getConnection();
     try {
         String sql =;
@@ -28,7 +28,7 @@ public Messages insertMessages(Messages message){
         preparedStatement.executeUpdate();
         ResultSet pkeyResultSet = preparedStatement.getGeneratedKeys();
         if(pkeyResultSet.next()){
-        int generated_message_id = (int) pkeyResultSet.getLong(1);
+        int generated_messages_id = (int) pkeyResultSet.getLong(1);
         return new Messages (generated_message_id, message.getName());
     }
 }catch(SQLException e){

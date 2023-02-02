@@ -142,4 +142,7 @@ public class Message {
     public static String getAllMessages() {
         return null;
     }
+    public static Message addMessage(Message message) {
+        return null;
+    }
 }

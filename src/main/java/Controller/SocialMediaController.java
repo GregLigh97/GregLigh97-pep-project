@@ -1,8 +1,11 @@
 package Controller;
 
-import java.nio.file.Path;
+import org.eclipse.jetty.util.security.Password;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import Model.Account;
+import Model.Message;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 
@@ -19,18 +22,38 @@ public class SocialMediaController {
      */
     public Javalin startAPI() {
         Javalin app = Javalin.create();
-        app.post();
-     
-        return app;
-    }
-
-    /**
-     * This is an example handler for an example endpoint.
-     * @param context The Javalin Context object manages information about both the HTTP request and response.
-     */
-    private void exampleHandler(Context context) {
-        context.json("sample text");
-    }
-
-
+        app.post("/Message/", ctx -> {
+            String jsonString = ctx.body();
+            ObjectMapper om = new ObjectMapper();
+            Message messages  = om.readValue(jsonString, Message.class);
+            ctx.status(200);
+        });
+        app.post("/Message/", ctx -> {
+        String jsonString = ctx.body();
+        ObjectMapper om = new ObjectMapper();
+        Message messages = om.readValue(jsonString, Message.class);
+        ctx.contentType("application/json");
+        ctx.status(400);
+        });
+        app.post("/Message/", ctx -> {
+        String jsonString = ctx.body();
+        ObjectMapper om = new ObjectMapper();
+        Message messages = om.readValue(jsonString, Message.class);
+        ctx.contentType("application/json");
+        ctx.status(200);    
+       });
+       app.post(null, null)
+   }
+   private void Message(Context ctx) throws JsonProcessingException {
+    String jsonString = ctx.body();
+    ObjectMapper om = new ObjectMapper();
+    Message messages = om.readValue(jsonString, Message.class);
+    if(username = !null && Password == 4 && Account == null){
+        ctx.status(200);
+    }else{
+    ctx.status(400);
+ {
+}
+}
+}
 }

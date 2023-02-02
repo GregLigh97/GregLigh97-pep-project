@@ -1,19 +1,19 @@
 
 
 public class MessagesService{
-public MessagesDAO messageDAO;
+public MessagesDAO messagesDAO;
 
 
 public MessagesService(){
-messageDAO = new MessagesDAO();
+messagesDAO = new MessagesDAO();
 }
 
 public MessagesService(MessagesDAO messageDAO){
 this.Messages = messageDAO;
 }
 public List<Messages>getAllMessages() {
-    return null;
+    return MessagesDAO.getAllMessages();
 }
-public Messages addMessages(Messages message) {
-return MessagesDAO.getAllMessages();
+public Messages addMessages(Messages messages) {
+return MessagesDAO.addMessages()
 }

@@ -1,7 +1,7 @@
-commit ac218a51c7fc8fd3fa3633341edddb10269f8ec7
+commit 99c3dccb24c5599b5e8e5eae1c4deb7d7a037bc5
 Author: GregLigh97 <greg2lightbody@gmail.com>
-Date:   Tue Jan 31 08:42:22 2023 +0000
+Date:   Wed Feb 1 07:09:24 2023 +0000
 
-    Made changes to Account Service
+    still having errors on post and get request
 
- 4 files changed, 951 insertions(+), 529 deletions(-)
+ 8 files changed, 92 insertions(+), 31 deletions(-)

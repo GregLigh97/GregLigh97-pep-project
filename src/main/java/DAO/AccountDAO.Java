@@ -12,14 +12,16 @@ public List<Account>getAllAccounts(){
 Connection connection = ConnectionUtil.getConnection();
 List<Account> accounts = new ArrayList<>();
 try {
-    //Write SQL logic here
-    String sql = ;
-    PreparedStatement preparedStatement = connection.prepareStatement(sql);
-    ResultSet rs = preparedStatement.executeQuery();
-    while(rs.next()){
-    Account accounts = new Account(rs.getInt("Username")),  rs.getString("Password"));
+    Account accounts = new Account(rs.getInt("username")),  rs.getString("password"));
     Account.add(accounts);
-  }
+    PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+  } ResultSet rs = preparedStatement.executeQuery();
+            while(rs.next()){
+                Account accounts = new Account(rs.getInt("account_id"), rs.getString("username"),
+                        rs.getString("password"));
+                accounts.add(accounts);
+            }
 }catch(SQLException e){
     System.out.println(e.getMessage());
 }
@@ -28,12 +30,9 @@ try {
 }
 // insert into the usernames and password 
 
-
-
 public Account insertAccount(Account accounts){
     Connection connection = ConnectionUtil.getConnection();
     try {
-        String sql =;
         PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         preparedStatement.executeUpdate();
         ResultSet pkeyResultSet = preparedStatement.getGeneratedKeys();
