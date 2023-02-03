@@ -1,26 +1,36 @@
+package DAO;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import Model.Message;
+import Util.ConnectionUtil;
+
+public class MessagesDAO{
 
 
-public class Messages{
-
-
-public List<Messages>getAllMessages(){
+public List<Message>getAllMessages(){
     Connection connection = ConnectionUtil.getConnection();
-    List<Messages> messages = new ArrayList<>();
+    List<Message> messages = new ArrayList<>();
     try {
        
         String sql =;
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        ResultSet rs = preparedStatement.executeQuery();
-        while(rs.next()){
-        Messages messages = new Messagesrs(rs.getInt("Account_id")), (rs.getInt("Message_id"))  rs.getString("Message_text"));
-        Messages.add(messages);
-}
+        preparedStatement.setString(1, Message.getAllMessages());
+        preparedStatement.setString(2, Message.getAllMessages());
+        ResultSet resultSet = preparedStatement.getGeneratedKeys();
+        while(resultSet.next()){
+        int generate_message_id = (int) resultSet.getLong(1);
+        return new Message(generate_messages_id, account.getUsername(), account.getPassword());
+    }
 }catch(SQLException e){
     System.out.println(e.getMessage());
 }
 
 
-public Messages getAccountByaccount_id(int account_id){
+public Message getAccountByaccount_id(int account_id){
     Connection connection = ConnectionUtil.getConnection();
     try {
         String sql =;

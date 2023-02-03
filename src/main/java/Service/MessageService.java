@@ -1,19 +1,23 @@
+package Service;
+import java.util.List;
+
+import DAO.MessagesDAO;
 
 
-public class MessagesService{
+public class MessageService{
 public MessagesDAO messagesDAO;
 
 
-public MessagesService(){
+public MessageService(){
 messagesDAO = new MessagesDAO();
 }
 
 public MessagesService(MessagesDAO messageDAO){
-this.Messages = messageDAO;
+this.messagesDAO = MessageDAO(;
 }
 public List<Messages>getAllMessages() {
     return MessagesDAO.getAllMessages();
 }
 public Messages addMessages(Messages messages) {
-return MessagesDAO.addMessages()
+return MessagesDAO.addMessages();
 }

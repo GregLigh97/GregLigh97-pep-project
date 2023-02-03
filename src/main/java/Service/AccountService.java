@@ -1,8 +1,14 @@
+package Service;
+import java.util.List;
+
+import DAO.AccountDAO;
+import Model.Account;
+
 
 
 
 public class AccountService {
-    public AccountDAO accountDAO;
+    AccountDAO accountDAO;
 
 
     public AccountService(){
@@ -19,7 +25,7 @@ public class AccountService {
 
     public Account ProcessUserLogins(Account accounts) {
         int account_id = message.getAccountByaccount_id
-        if(username = !null && password == 4 && Account == null){
+        if(Username = !null && password == 4 && Account == null){
             String jsonStringToBeReturned = om.writeValueAsString;
             ctx.result(jsonStringToBeReturned);
             ctx.status(200);

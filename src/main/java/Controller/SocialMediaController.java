@@ -1,13 +1,6 @@
 package Controller;
 
-import org.eclipse.jetty.util.security.Password;
-
-import com.fasterxml.jackson.core.io.JsonEOFException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import Model.Account;
-import Model.Message;
 import io.javalin.Javalin;
-import io.javalin.http.Context;
 import Service.AccountService;
 import Service.MessageService;
 
@@ -17,7 +10,8 @@ import Service.MessageService;
  * refer to prior mini-project labs and lecture materials for guidance on how a controller may be built.
  */
 public class SocialMediaController {
-    
+AccountService accountService;
+MessageService messageService;
 
     public SocialMediaController(){
    
