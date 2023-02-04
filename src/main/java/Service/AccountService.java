@@ -17,15 +17,15 @@ public class AccountService {
     // Constructor for Account Service when AccountDAO is provided.
 
     public AccountService(AccountDAO accountDAO){
-        this.Account = accountDAO;
+        this.accountDAO = accountDAO;
     }
     public List<Account>CreateNewUsers() {
-        return AccountDAO.CreateNewUsers();
+        return AccountDAO.CreateNewUsers(Account);
     }
 
     public Account ProcessUserLogins(Account accounts) {
         int account_id = message.getAccountByaccount_id
-        if(Username = !null && password == 4 && Account == null){
+        if(Username = !null && password == 4 && accountDAO == null){
             String jsonStringToBeReturned = om.writeValueAsString;
             ctx.result(jsonStringToBeReturned);
             ctx.status(200);

@@ -45,9 +45,9 @@ public class AccountDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = 
+            String sql = "";
         
-            return new Account (generate_accounts_id, accounts.getName());
+            
         }
     }catch(SQLException e){
         System.out.println(e.getMessage());
