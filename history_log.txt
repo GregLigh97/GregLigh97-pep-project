@@ -1,7 +1,7 @@
-commit a4140e5ccf01287e465e58186c14e18b69992948
+commit 0b89f543187e4f4b58b9d891aaba5efe4a3dcfb5
 Author: GregLigh97 <greg2lightbody@gmail.com>
-Date:   Fri Feb 3 22:07:00 2023 +0000
+Date:   Sat Feb 4 06:27:34 2023 +0000
 
-    still issues
+    Still working
 
- 8 files changed, 1512 insertions(+), 95 deletions(-)
+ 7 files changed, 185 insertions(+), 1486 deletions(-)

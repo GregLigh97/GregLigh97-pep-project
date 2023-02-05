@@ -12,7 +12,7 @@ import Util.ConnectionUtil;
 public class MessageDAO{
 
 
-public List<Message>CreateNewMessages(){
+public List<Message>InsertNewMessages(){
     Connection connection = ConnectionUtil.getConnection();
     List<Message> messages = new ArrayList<>();
     try {

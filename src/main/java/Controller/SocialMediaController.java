@@ -1,6 +1,11 @@
 package Controller;
 
 import io.javalin.Javalin;
+import io.javalin.http.Context;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import Model.Account;
 import Service.AccountService;
 import Service.MessageService;
 
@@ -17,10 +22,9 @@ MessageService messageService;
    
      }
     public Javalin startAPI(){
-    Javalin app = Javalin.create();
-        return app;
+    
+    return app;
     }
 }
-    
+ 
   
-        

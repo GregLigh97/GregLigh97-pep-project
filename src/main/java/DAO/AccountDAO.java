@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Model.Account;
+import Model.Message;
 import Util.ConnectionUtil;
 
 
@@ -51,6 +52,9 @@ public class AccountDAO {
         }
     }catch(SQLException e){
         System.out.println(e.getMessage());
+    }
+    public static List<Message> InsertNewMessages() {
+        return null;
     }
     return null;
     }

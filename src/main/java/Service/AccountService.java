@@ -19,18 +19,13 @@ public class AccountService {
     public AccountService(AccountDAO accountDAO){
         this.accountDAO = accountDAO;
     }
-    public List<Account>CreateNewUsers() {
-        return AccountDAO.CreateNewUsers(Account);
+    public Account CreateNewUsers(Account account) {
+    return AccountDAO.CreateNewUsers();
     }
 
     public Account ProcessUserLogins(Account accounts) {
-        int account_id = message.getAccountByaccount_id
-        if(Username = !null && password == 4 && accountDAO == null){
-            String jsonStringToBeReturned = om.writeValueAsString;
-            ctx.result(jsonStringToBeReturned);
-            ctx.status(200);
-        }else{
-            return ctx.status(400);
+         return AccountDAO.ProcessUserLogins();
         }
     }
-}
+
+
