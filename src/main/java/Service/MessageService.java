@@ -14,7 +14,7 @@ public MessageService(){
 messagesDAO = new MessageDAO();
 }
 public MessageService(MessageDAO messageDAO){
-   this.messagesDAO = messagesDAO;
+   this.messageDAO = MessageDAO;
 }
 public List<Message>InsertNewMessages(){
     return AccountDAO.InsertNewMessages();
