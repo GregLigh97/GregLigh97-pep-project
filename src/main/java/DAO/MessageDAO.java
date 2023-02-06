@@ -28,7 +28,7 @@ public Message InsertNewMessages(Message message){
         return null;
 
 }
-  public Message GetAllMessages(int message_id){
+  public Message GetAllMessages(){
     Connection connection = ConnectionUtil.getConnection();
     try {
         String sql = "Select * From Message";
@@ -72,7 +72,7 @@ return null;
 }
 {
 }
-public void DeleteMessagebyId(){
+public Message DeleteMessagebyId(int message_id){
     Connection connection = ConnectionUtil.getConnection();
     try {
         String sql = "Delete From Message Where message_id = ?";
@@ -85,6 +85,7 @@ public void DeleteMessagebyId(){
     }catch(SQLException e){
     System.out.println(e.getMessage());
     }
+    return null;
 }
 
 public void UpdatebyId(int message_id, Message message){

@@ -19,9 +19,19 @@ public MessageService(MessageDAO messageDAO){
 public Message InsertNewMessages(Message message){
     return messageDAO.InsertNewMessages(message);
 }
-//public Message GetAllMessage(int message_id){
-  //  return messageDAO.GetAllMessages(message_id);
-
-//public List<Message>GetMessagebyId(){
-  //  return messageDAO.GetMessagebyId();
+public Message GetAllMessage(){
+   return messageDAO.GetAllMessages();
+}
+public Message GetMessagebyId(int message_id){
+    return messageDAO.GetMessagebyId(message_id);
+}
+public Message DeleteMessagebyId(int message_id){
+    return messageDAO.DeleteMessagebyId(message_id);
+}
+public Message UpdatebyId(int message_id){
+    return messageDAO.UpdatebyId(message_id);
+}
+public Message GetMessagebyUserid(int message_id){
+    return messageDAO.GetMessagebyId(message_id);
+}
 }

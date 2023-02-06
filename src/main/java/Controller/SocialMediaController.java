@@ -44,8 +44,8 @@ private void CreateNewUsersHandler(Context ctx) throws JsonProcessingException {
        ctx.status(200);
    }else{
        ctx.json(om.writeValueAsString(addedAccount));
-    
-
+   }
+}
 private void ProcessUserLogingsHandler(Context ctx) throws JsonProcessingException {
     ObjectMapper om = new ObjectMapper();
     Account account = om.readValue(ctx.body(), Account.class);
@@ -55,7 +55,7 @@ private void ProcessUserLogingsHandler(Context ctx) throws JsonProcessingExcepti
     }else{
         ctx.json(om.writeValueAsString(addedaccount));
     }
-
+}
 private void PostNewMessageHandler(Context ctx) throws JsonProcessingException {
     ObjectMapper om = new ObjectMapper();
     Message message = om.readValue(ctx.body(), Message.class);
@@ -67,15 +67,15 @@ private void PostNewMessageHandler(Context ctx) throws JsonProcessingException {
     }
 }
  public void GetAllNewMessageHandler(Context ctx)throws JsonProcessingException {
-    List<Message> messages = messageService.GetAllMessage();
+    Message messages = messageService.GetAllMessage();
     ctx.json(messages);
  }
  public void GetMessagebyIDHandler(Context ctx){
-    List<Message> messages = messageService.GetMessagebyId();
+    Message messages = messageService.GetMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
     ctx.json(messages);
  }
 public void DeleteMessagebyIDHandler(Context ctx){
-   List<Message>messages = messageService.DeleteMessagebyId();
+   Message messages = messageService.DeleteMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
    ctx.json(messages);
 }
 public void UpdatebyIDHandler(Context ctx) throws JsonProcessingException {
@@ -91,7 +91,7 @@ public void UpdatebyIDHandler(Context ctx) throws JsonProcessingException {
     }
 }
 public void GetMessagebyUseridHandler(Context ctx) {
- List<Message> messages = messageService.GetMessagebyId();
+ Message messages = messageService.GetMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
  ctx.json(messages);
 }
 }

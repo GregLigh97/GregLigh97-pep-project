@@ -35,28 +35,28 @@ public class AccountDAO {
             }
         }catch(SQLException e){
             System.out.println(e.getMessage());
-       }
+        }
        return null;
-    } 
-    
-    
-    // insert into the usernames and password 
-
+}  
     public Account ProcessUserLogins(Account accounts){
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-           String sql = "";
-        
-            
+            String sql = "Select * From Account Where username and password = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+              //write preparedStatement's setInt method here.
+              preparedStatement.setString(1, "username");
+              preparedStatement.setString(2, "password");
+              ResultSet rs = preparedStatement.executeQuery();
+              while(rs.next()){
+            Account account = new Account(rs.getString("username"), 
+                                          rs.getString("password"));
+            return account;                
         }
     }catch(SQLException e){
         System.out.println(e.getMessage());
     }
-    public static List<Message> InsertNewMessages() {
-        return null;
-    }
     return null;
-    }
+}
 }
 

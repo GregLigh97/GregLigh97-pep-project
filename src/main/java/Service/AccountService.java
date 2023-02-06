@@ -16,16 +16,15 @@ public class AccountService {
     }
     // Constructor for Account Service when AccountDAO is provided.
 
-    public AccountService(AccountDAO accountDAO){
-        this.accountDAO = accountDAO;
-    }
-  //  public Account CreateNewUsers(Account account) {
-  //  return AccountDAO.CreateNewUsers();
-    }
-
-   // public Account ProcessUserLogins(Account accounts) {
-  //       return AccountDAO.ProcessUserLogins();
-        
     
+   public Account CreateNewUsers(Account account) {
+    return accountDAO.CreateNewUsers(account);
+    }
+    public Account ProcessUserLogins(Account accounts) {
+    return accountDAO.ProcessUserLogins(accounts);
+}
+}
+    
+           
 
 
