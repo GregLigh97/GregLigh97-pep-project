@@ -35,10 +35,10 @@ public class AccountDAO {
             }
         }catch(SQLException e){
             System.out.println(e.getMessage());
-        }
-        return null;
-        
-    }
+       }
+       return null;
+    } 
+    
     
     // insert into the usernames and password 
 
@@ -46,7 +46,7 @@ public class AccountDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "";
+           String sql = "";
         
             
         }

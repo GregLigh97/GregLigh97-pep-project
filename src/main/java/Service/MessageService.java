@@ -7,22 +7,21 @@ import Model.Message;
 
 
 public class MessageService{
-public MessageDAO messagesDAO;
+public MessageDAO messageDAO;
 
 
 public MessageService(){
-messagesDAO = new MessageDAO();
+messageDAO = new MessageDAO();
 }
 public MessageService(MessageDAO messageDAO){
-   this.messageDAO = MessageDAO;
+   this.messageDAO = messageDAO;
 }
-public List<Message>InsertNewMessages(){
-    return AccountDAO.InsertNewMessages();
+public Message InsertNewMessages(Message message){
+    return messageDAO.InsertNewMessages(message);
 }
-public List<Message> GetAllMessage(){
-    return messagesDAO.GetAllMessages(message_id);
-}
-public List<Message>GetMessagebyId(){
-    return messagesDAO.GetMessagebyId(message_id);
-}
+//public Message GetAllMessage(int message_id){
+  //  return messageDAO.GetAllMessages(message_id);
+
+//public List<Message>GetMessagebyId(){
+  //  return messageDAO.GetMessagebyId();
 }

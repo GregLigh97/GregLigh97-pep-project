@@ -19,13 +19,13 @@ public class AccountService {
     public AccountService(AccountDAO accountDAO){
         this.accountDAO = accountDAO;
     }
-    public Account CreateNewUsers(Account account) {
-    return AccountDAO.CreateNewUsers();
+  //  public Account CreateNewUsers(Account account) {
+  //  return AccountDAO.CreateNewUsers();
     }
 
-    public Account ProcessUserLogins(Account accounts) {
-         return AccountDAO.ProcessUserLogins();
-        }
-    }
+   // public Account ProcessUserLogins(Account accounts) {
+  //       return AccountDAO.ProcessUserLogins();
+        
+    
 
 

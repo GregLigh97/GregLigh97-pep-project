@@ -25,14 +25,22 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running AuthIntegrationTest
-[ERROR] Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.364 s <<< FAILURE! - in AuthIntegrationTest
-[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.279 s  <<< ERROR!
+[ERROR] Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.864 s <<< FAILURE! - in AuthIntegrationTest
+[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.628 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,7 +83,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.279 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest  Time elapsed: 0.629 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -119,13 +127,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -168,7 +184,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterShortPasswordTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -212,13 +228,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.039 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.012 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -261,7 +285,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.04 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postLoginEmptyTest  Time elapsed: 0.068 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -305,13 +329,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.008 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -354,7 +386,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest  Time elapsed: 0.01 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -398,13 +430,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.012 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -447,7 +487,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterTest  Time elapsed: 0.013 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -491,13 +531,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.008 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.011 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -540,7 +588,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.009 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest  Time elapsed: 0.012 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -584,13 +632,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.07 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:41)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at AuthIntegrationTest.setUp(AuthIntegrationTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -633,7 +689,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest  Time elapsed: 0.07 s  <<< ERROR!
 java.lang.NullPointerException
 	at AuthIntegrationTest.tearDown(AuthIntegrationTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -678,14 +734,22 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
 [INFO] Running MessagingIntegrationTest
-[ERROR] Tests run: 40, Failures: 0, Errors: 40, Skipped: 0, Time elapsed: 0.135 s <<< FAILURE! - in MessagingIntegrationTest
+[ERROR] Tests run: 40, Failures: 0, Errors: 40, Skipped: 0, Time elapsed: 0.412 s <<< FAILURE! - in MessagingIntegrationTest
 [ERROR] MessagingIntegrationTest.postAccountAndMessageThenGetMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -774,11 +838,19 @@ java.lang.NullPointerException
 
 [ERROR] MessagingIntegrationTest.deleteMessageNonExistentMessageTest  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -867,11 +939,19 @@ java.lang.NullPointerException
 
 [ERROR] MessagingIntegrationTest.postAccountAndBlankMessage  Time elapsed: 0 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -958,13 +1038,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTest  Time elapsed: 0 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1007,7 +1095,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTest  Time elapsed: 0 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTest  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1051,13 +1139,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0.002 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1100,7 +1196,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0.002 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1144,13 +1240,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1193,7 +1297,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1237,13 +1341,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.08 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1286,7 +1398,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deleteMessageTest  Time elapsed: 0.08 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1332,11 +1444,19 @@ java.lang.NullPointerException
 
 [ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1423,13 +1543,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.006 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.009 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1472,7 +1600,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessageAfterPatchTest  Time elapsed: 0.01 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1516,13 +1644,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.11 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1565,7 +1701,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage  Time elapsed: 0.111 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1609,13 +1745,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.026 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.072 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1658,7 +1802,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.026 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageTooLongTest  Time elapsed: 0.072 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1702,13 +1846,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.038 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.008 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1751,7 +1903,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.038 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty  Time elapsed: 0.009 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1795,13 +1947,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.008 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1844,7 +2004,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.007 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest  Time elapsed: 0.009 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1888,13 +2048,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1937,7 +2105,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageBlankTest  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1981,13 +2149,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2030,7 +2206,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.005 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2076,11 +2252,19 @@ java.lang.NullPointerException
 
 [ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2167,13 +2351,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
@@ -2260,11 +2452,19 @@ java.lang.NullPointerException
 
 [ERROR] MessagingIntegrationTest.postAccountAndMessageTest  Time elapsed: 0.003 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
@@ -2349,13 +2549,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
@@ -2397,7 +2605,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.004 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2440,13 +2648,21 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.Error: 
-Unresolved compilation problem: 
-	app cannot be resolved to a variable
+Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
-	at Controller.SocialMediaController.startAPI(SocialMediaController.java:26)
-	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:45)
+	at Controller.SocialMediaController.<init>(SocialMediaController.java:26)
+	at MessagingIntegrationTest.setUp(MessagingIntegrationTest.java:44)
 	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
@@ -2488,7 +2704,7 @@ Unresolved compilation problem:
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 
-[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.003 s  <<< ERROR!
+[ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest  Time elapsed: 0.006 s  <<< ERROR!
 java.lang.NullPointerException
 	at MessagingIntegrationTest.tearDown(MessagingIntegrationTest.java:53)
 	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
@@ -2536,164 +2752,380 @@ java.lang.NullPointerException
 [INFO] 
 [ERROR] Errors: 
 [ERROR] AuthIntegrationTest.postLoginEmptyTest
-[ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: AuthIntegrationTest.setUp:40 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterBlankUsernameTest
-[ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: AuthIntegrationTest.setUp:40 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterDuplicateUsernameTest
-[ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: AuthIntegrationTest.setUp:40 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterShortPasswordTest
-[ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: AuthIntegrationTest.setUp:40 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterTest
-[ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: AuthIntegrationTest.setUp:40 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterThenPostIncorrectLoginTest
-[ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: AuthIntegrationTest.setUp:40 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
 [ERROR] AuthIntegrationTest.postRegisterThenPostLoginTest
-[ERROR]   Run 1: AuthIntegrationTest.setUp:41 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: AuthIntegrationTest.setUp:40 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: AuthIntegrationTest.tearDown:50 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.deleteMessageNonExistentMessageTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.deleteMessageTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.deletedMessageShouldNotExistTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.getAllMessagesEmptyTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.getMessageAfterPatchTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.getMessagesByAccountIdEmpty
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageBlankTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageNonExistentMessageTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.patchMessageTooLongTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndBlankMessage
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndMessageAndGetAllMessagesTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndMessageTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndMessageThenGetMessageTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountAndTooLongMessage
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postAccountTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postManyAccountsAndMessagesThenGetMessagesByAccountIdTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postManyUsersAndMessagesThenGetAllMessages
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
 [ERROR] MessagingIntegrationTest.postMessageNonExistentAccountTest
-[ERROR]   Run 1: MessagingIntegrationTest.setUp:45 »  Unresolved compilation problem: 
-	app cannot be resolved to a variable
+[ERROR]   Run 1: MessagingIntegrationTest.setUp:44 »  Unresolved compilation problems: 
+	CreateNewUsersHandler cannot be resolved to a variable
+	ProcessUserLogingsHandler cannot be resolved to a variable
+	InsertNewMessageHnadler cannot be resolved to a variable
+	GetAllNewMessageHandler cannot be resolved to a variable
+	GetMessagebyIDHandler cannot be resolved to a variable
+	DeleteMessagebyIDHandler cannot be resolved to a variable
+	UpdatebyIDHandler cannot be resolved to a variable
+	GetMessagebyUserid cannot be resolved to a variable
+	Syntax error on token "}", delete this token
 
 [ERROR]   Run 2: MessagingIntegrationTest.tearDown:53 NullPointer
 [INFO] 
@@ -2703,8 +3135,8 @@ java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.900 s
-[INFO] Finished at: 2023-02-05T00:15:29Z
+[INFO] Total time:  9.611 s
+[INFO] Finished at: 2023-02-05T19:41:32Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M7:test (default-test) on project Challenges: 
 [ERROR] 

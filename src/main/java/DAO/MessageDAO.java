@@ -12,27 +12,23 @@ import Util.ConnectionUtil;
 public class MessageDAO{
 
 
-public List<Message>InsertNewMessages(){
+public Message InsertNewMessages(Message message){
     Connection connection = ConnectionUtil.getConnection();
-    List<Message> messages = new ArrayList<>();
     try {
-       
-        String sql = "Insert INTO Message(message_text) Values (?);";
+        String sql = "Insert INTO Message(posted_by, message_text, time_posted_epoch, ) Values (?,?,?);";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        preparedStatement.setString(1, Message.getAllMessages());
-        preparedStatement.setString(2, Message.getAllMessages());
-        ResultSet resultSet = preparedStatement.getGeneratedKeys();
-        while(resultSet.next()){
-        Message message = new Message(resultSet.getInt("message_id"), resultSet.getString("message_text"), 0);
-        messages.add(message);
-    }
-}catch(SQLException e){
-    System.out.println(e.getMessage());
-}
-return null;
-}
+        preparedStatement.setInt(1, message.getPosted_by());
+        preparedStatement.setString(2, message.getMessage_text());
+        preparedStatement.setLong(3, message.getTime_posted_epoch());
+        preparedStatement.executeUpdate();
+        return message;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+        }
+        return null;
 
-public Message GetAllMessages(int message_id){
+}
+  public Message GetAllMessages(int message_id){
     Connection connection = ConnectionUtil.getConnection();
     try {
         String sql = "Select * From Message";
@@ -100,9 +96,9 @@ public void UpdatebyId(int message_id, Message message){
 
         //write PreparedStatement setString and setInt methods here.
         
-        preparedStatement.setString(1, "message_text" );
+        preparedStatement.setString(3, "message_text" );
         preparedStatement.setString(2, "account_id");
-        preparedStatement.setInt(3, message_id);
+        preparedStatement.setInt(1, message_id);
 
         preparedStatement.executeUpdate();
 
