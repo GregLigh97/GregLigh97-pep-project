@@ -88,7 +88,7 @@ public Message DeleteMessagebyId(int message_id){
     return null;
 }
 
-public void UpdatebyId(int message_id, Message message){
+public Message UpdatebyId(int message_id, Message message){
     Connection connection = ConnectionUtil.getConnection();
     try {
         //Write SQL logic here
@@ -106,6 +106,7 @@ public void UpdatebyId(int message_id, Message message){
    }catch(SQLException e){
     System.out.println(e.getMessage());
    }
+   return message;
 }
 
 public Message GetMessagebyUserid(int account_id){

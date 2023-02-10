@@ -5,8 +5,12 @@ import io.javalin.http.Context;
 
 import java.util.List;
 
+import org.eclipse.jetty.util.security.Password;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.introspect.TypeResolutionContext.Empty;
 
 import Model.Account;
 import Model.Message;
@@ -25,73 +29,87 @@ MessageService messageService;
 
     public Javalin startAPI(){
     Javalin app = Javalin.create();
-    app.post("/Account",this:: CreateNewUsersHandler);
-    app.post("/Account", this:: ProcessUserLogingsHandler);
+    app.post("/register",this:: CreateNewUsersHandler);
+    app.post("/login", this:: ProcessUserLogingsHandler);
     app.post("/messages",this:: PostNewMessageHandler);
     app.get("/messages",this:: GetAllNewMessageHandler);
-    app.get("/messages",this:: GetMessagebyIDHandler);
-    app.delete("/Messages",this:: DeleteMessagebyIDHandler);
-    app.put("/Message",this:: UpdatebyIDHandler);
-    app.get("/Message",this:: GetMessagebyUseridHandler);
-    app.start(8080);
+    app.get("/messages/{message_id}",this:: GetMessagebyIDHandler);
+    app.delete("/messages/{message_id}",this:: DeleteMessagebyIDHandler);
+    app.post("/message/{message_id}",this:: UpdatebyIDHandler);
+   app.get("/accounts/{account_id}",this:: GetMessagebyUseridHandler);
     return app;
     }
 private void CreateNewUsersHandler(Context ctx) throws JsonProcessingException {
     ObjectMapper om = new ObjectMapper();
     Account account = om.readValue(ctx.body(), Account.class);
-    Account addedAccount = accountService.CreateNewUsers(account);
-     if(addedAccount!=null){
-       ctx.status(200);
-   }else{
-       ctx.json(om.writeValueAsString(addedAccount));
-   }
-}
-private void ProcessUserLogingsHandler(Context ctx) throws JsonProcessingException {
-    ObjectMapper om = new ObjectMapper();
-    Account account = om.readValue(ctx.body(), Account.class);
-    Account addedaccount = accountService.ProcessUserLogins(account);
-    if(addedaccount != null){
-        ctx.status(200);
+    if(account!=null ){
+      ctx.json(om.writeValueAsString(account));
     }else{
-        ctx.json(om.writeValueAsString(addedaccount));
+        ctx.status(400);
     }
 }
-private void PostNewMessageHandler(Context ctx) throws JsonProcessingException {
+
+ private void ProcessUserLogingsHandler(Context ctx) throws JsonProcessingException {
+     ObjectMapper om = new ObjectMapper();
+     Account account = om.readValue(ctx.body(), Account.class);
+     Account postlogins = accountService.ProcessUserLogins(account);
+     if(postlogins == null || account== null & account.getPassword().equalsIgnoreCase(null)){
+         ctx.status(401);
+     }else{
+         ctx.json(om.writeValueAsString(postlogins));
+     }
+ }
+ private void PostNewMessageHandler(Context ctx) throws JsonProcessingException {
+     ObjectMapper om = new ObjectMapper();
+     Message message = om.readValue(ctx.body(), Message.class);
+     if(message != null){
+         ctx.status(400);
+     }else{
+         ctx.json(om.writeValueAsString(message));
+     }
+ }
+  public void GetAllNewMessageHandler(Context ctx)throws JsonProcessingException {
+     Message messages = messageService.GetAllMessage();
+     ctx.json(messages);
+  }
+  public void GetMessagebyIDHandler(Context ctx) throws JsonProcessingException {
     ObjectMapper om = new ObjectMapper();
-    Message message = om.readValue(ctx.body(), Message.class);
-    Message addedmessage = messageService.InsertNewMessages(message);
-    if(addedmessage != null){
-        ctx.status(400);
-    }else{
-        ctx.json(om.writeValueAsString(addedmessage));
+    Message message_id = om.readValue(ctx.body(), Message.class);
+    if(message_id != null){
+    ctx.status(200);
+     }else{
+         ctx.json(message_id);
+     }
+  }
+ public void DeleteMessagebyIDHandler(Context ctx) throws JsonMappingException, JsonProcessingException{
+    ObjectMapper om = new ObjectMapper();
+    Message message = messageService.GetMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
+    if(message != null) {
+        message = om.readValue(ctx.body(), Message.class);
     }
-}
- public void GetAllNewMessageHandler(Context ctx)throws JsonProcessingException {
-    Message messages = messageService.GetAllMessage();
-    ctx.json(messages);
- }
- public void GetMessagebyIDHandler(Context ctx){
-    Message messages = messageService.GetMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
-    ctx.json(messages);
- }
-public void DeleteMessagebyIDHandler(Context ctx){
-   Message messages = messageService.DeleteMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
-   ctx.json(messages);
-}
-public void UpdatebyIDHandler(Context ctx) throws JsonProcessingException {
-    ObjectMapper om = new ObjectMapper();
-    Message message = om.readValue(ctx.body(), Message.class);
-    int message_id = Integer.parseInt(ctx.pathParam("message_id"));
-    Message UpdatedMessage = messageService.UpdatebyId(message_id, message);
-    System.out.println(UpdatedMessage);
-    if(UpdatedMessage == null){
-        ctx.status(400);
+    Message delete = messageService.DeleteMessagebyId(message.getMessage_id());
+    if (delete != null) {
+     ctx.json(delete);
     } else {
-        ctx.json(om.writeValueAsString(UpdatedMessage));
+        ctx.status(200);
+        ctx.json(delete);
     }
-}
-public void GetMessagebyUseridHandler(Context ctx) {
- Message messages = messageService.GetMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
- ctx.json(messages);
-}
-}
+ }
+
+ public void UpdatebyIDHandler(Context ctx) throws JsonProcessingException {
+     ObjectMapper om = new ObjectMapper();
+     Message message = om.readValue(ctx.body(), Message.class);
+     int message_id = Integer.parseInt(ctx.pathParam("message_id"));
+     Message UpdatedMessage = messageService.UpdatebyId(message_id, message);
+     System.out.println(UpdatedMessage);
+     if(UpdatedMessage == null){
+         ctx.status(400);
+     } else {
+         ctx.json(om.writeValueAsString(UpdatedMessage));
+     }
+ }
+ public void GetMessagebyUseridHandler(Context ctx) {
+  Message messages = messageService.GetMessagebyId(Integer.parseInt(ctx.pathParam("message_id")));
+  ctx.json(messages);
+ }
+ }

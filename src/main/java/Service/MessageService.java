@@ -28,8 +28,8 @@ public Message GetMessagebyId(int message_id){
 public Message DeleteMessagebyId(int message_id){
     return messageDAO.DeleteMessagebyId(message_id);
 }
-public Message UpdatebyId(int message_id){
-    return messageDAO.UpdatebyId(message_id);
+public Message UpdatebyId(int message_id, Message message){
+    return messageDAO.UpdatebyId(message_id, message);
 }
 public Message GetMessagebyUserid(int message_id){
     return messageDAO.GetMessagebyId(message_id);

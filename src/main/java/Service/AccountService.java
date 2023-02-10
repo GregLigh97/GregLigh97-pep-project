@@ -1,8 +1,13 @@
 package Service;
 import java.util.List;
 
+import org.eclipse.jetty.util.security.Password;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import DAO.AccountDAO;
 import Model.Account;
+import io.javalin.http.Context;
 
 
 
@@ -16,15 +21,23 @@ public class AccountService {
     }
     // Constructor for Account Service when AccountDAO is provided.
 
-    
-   public Account CreateNewUsers(Account account) {
-    return accountDAO.CreateNewUsers(account);
+    public AccountService(AccountDAO accountDAO){
+    this.accountDAO = accountDAO;
+
     }
-    public Account ProcessUserLogins(Account accounts) {
-    return accountDAO.ProcessUserLogins(accounts);
-}
-}
-    
+
+
+    public Account CreateNewUsers(Account account) {
+        return accountDAO.CreateNewUsers(account);
+    }
+
+
+    public Account ProcessUserLogins(Account account) {
+        return null;
+    }
+    }
+
+
            
 
 

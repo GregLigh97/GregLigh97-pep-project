@@ -1,7 +1,7 @@
-commit 524bfbabf816f0036b6b6733e943c505d108f506
+commit e11e3c6766bb5a74aa48f5af03bb9891a414ed0b
 Author: GregLigh97 <greg2lightbody@gmail.com>
-Date:   Mon Feb 6 06:34:48 2023 +0000
+Date:   Mon Feb 6 19:20:31 2023 +0000
 
-    getting there
+    I'm getting Closer
 
- 7 files changed, 766 insertions(+), 290 deletions(-)
+ 7 files changed, 692 insertions(+), 628 deletions(-)
