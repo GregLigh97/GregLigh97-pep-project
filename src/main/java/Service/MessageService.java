@@ -28,7 +28,6 @@ public List<Message>getAllMessage(){
     return messageDAO.GetAllMessages();
 }
 public Message getMessageById(int message_id){
-   // Message messages =messageDAO.getMessageById(message_id);
     if(messageDAO.getMessageById(message_id)!= null){
     return messageDAO.getMessageById(message_id);
 }
@@ -48,8 +47,8 @@ public Message updateMessages(int message_id, Message message){
     }
    return null;
 }       
-public List<Message>GetMeesagesbyAcccountid(int posted_by){
- return messageDAO.GetMessagesbyAccountId(posted_by);
+public List<Message>GetMessagesbyAccountId(int posted_by){
+    return messageDAO.GetMessagesbyAccountId(posted_by);
 }
 }
 

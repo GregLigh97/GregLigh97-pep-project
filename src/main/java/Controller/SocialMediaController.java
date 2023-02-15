@@ -31,14 +31,14 @@ public class SocialMediaController{
    }
     public Javalin startAPI(){
         Javalin app = Javalin.create();
-        app.post("/register",this::PostRegisterHandler);
-        app.post("/login", this::PostLoginHandler);
-        app.post("/messages",this::PostNewMessageHandler);
-        app.get("/messages",this::GetAllNewMessageHandler);
-        app.get("/messages/{message_id}",this::GetMessagebyIDHandler);
-        app.delete("/messages/{message_id}",this::DeleteMessagebyIDHandler);
-        app.patch("/messages/{message_id}",this::UpdatebyIDHandler);
-        app.get("/account/{account_id}/messages",this::GetMessagesbyAccountIdHandler);
+        app.post("register",this::PostRegisterHandler);
+        app.post("login", this::PostLoginHandler);
+        app.post("messages",this::PostNewMessageHandler);
+        app.get("messages",this::GetAllNewMessageHandler);
+        app.get("messages/{message_id}",this::GetMessagebyIDHandler);
+        app.delete("messages/{message_id}",this::DeleteMessagebyIDHandler);
+        app.patch("messages/{message_id}",this::UpdatebyIDHandler);
+        app.get("accounts/{account_id}/messages",this::GetMessagesbyAccountIdHandler);
         return app;
     }
     
@@ -119,9 +119,9 @@ public void UpdatebyIDHandler(Context ctx) throws JsonProcessingException {
         }
             
 }
-private void GetMessagesbyAccountIdHandler(Context ctx) throws JsonProcessingException {
+public void GetMessagesbyAccountIdHandler(Context ctx) throws JsonProcessingException {
     int posted_by = Integer.parseInt(ctx.pathParam("account_id"));
-    List<Message>messages=messageService.GetMeesagesbyAcccountid(posted_by);
+    List<Message>messages=messageService.GetMessagesbyAccountId(posted_by);
     ctx.json(messages);
 }
 }
